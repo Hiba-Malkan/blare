@@ -1,10 +1,8 @@
 # ESP32-C3 Alarm Clock
 
-A small bedside alarm clock built using an LOLA ESP32-C3, TFT display, featuring Wi-Fi time synchronization, a buzzer, physical control buttons, and an intuitive on-device menu system.
+A small bedside alarm clock built using a LOLA ESP32-C3!
 
-When powered by a 3.3 V supply, the clock automatically connects to the confirgured Wi-Fi network and synchronizes the current time with an NTP server, eliminating the need for manual time setting. The TFT display shows the current time, date, and the status of the alarm (armed or disarmed).
-
-The physical buttons allow the user to navigate the on-device menu, set and adjust the alarm time, switch between 12-hour and 24-hour time formats, and snooze the alarm when it is triggered. The menu-driven interface provides a simple and user-friendly way to configure the clock while keeping the overall design compact and easy to use.
+![alt text](images/image1.png)
 
 ## Features
 - Syncs the clock over Wi-Fi using NTP on boot
@@ -33,6 +31,8 @@ The physical buttons allow the user to navigate the on-device menu, set and adju
 
 ## Case
 A 3D printed case built to house the hardware (the PCB breadboard, ESP32, TFT Display, buzzer and jumper wires).
+
+![alt text](images/image2.png)
 
 ## Wiring
 
@@ -63,6 +63,8 @@ A 3D printed case built to house the hardware (the PCB breadboard, ESP32, TFT Di
 | RIGHT | 4 |
 | OK | 5 |
 | SNOOZE | 18 |
+
+![alt text](images/image.png)
 
 ## Controls
 
