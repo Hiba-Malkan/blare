@@ -1,18 +1,22 @@
 # ESP32-C3 Alarm Clock
 
-A small bedside alarm clock built with an LOLA ESP32-C3, with a TFT display, Wi-Fi time sync, a buzzer, physical buttons, and uses an on-device menu.
+A small bedside alarm clock built using an LOLA ESP32-C3, TFT display, featuring Wi-Fi time synchronization, a buzzer, physical control buttons, and an intuitive on-device menu system.
 
-When you connect the clock to a 3.3V power source, the clock connects to Wi-Fi and pulls the current time from an NTP server, so it never needs to be set by hand. The screen shows the time, the date, and whether the alarm is currently armed. From there, the buttons control the following: opening the menu, adjusting the alarm time, flipping between display modes (12/24 HRS), and snoozing when the alarm rings.
+When powered by a 3.3 V supply, the clock automatically connects to the confirgured Wi-Fi network and synchronizes the current time with an NTP server, eliminating the need for manual time setting. The TFT display shows the current time, date, and the status of the alarm (armed or disarmed).
+
+The physical buttons allow the user to navigate the on-device menu, set and adjust the alarm time, switch between 12-hour and 24-hour time formats, and snooze the alarm when it is triggered. The menu-driven interface provides a simple and user-friendly way to configure the clock while keeping the overall design compact and easy to use.
 
 ## Features
-- Syncs its clock over Wi-Fi using NTP
-- Shows a large, easy-to-read time display on the TFT screen.
-- Lets you enable or disable the alarm with one button.
-- Has a snooze button for when you're not ready to get up.
-- Switches between 12-hour and 24-hour display.
-- Uses a simple button-based menu to navigate everything.
-- Rings a piezo buzzer when the alarm goes off.
-- Fits into a compact enclosure — this was designed to sit on a nightstand, not take one over.
+- Syncs the clock over Wi-Fi using NTP on boot
+- Shows time, date, and alarm status on the TFT screen, updated every second
+- One alarm, set by hour and minute through the menu
+- Enable/disable alarm with one button
+- Snooze button, fixed 5-minute delay
+- Stop button to silence a ringing alarm
+- Switches between 12-hour and 24-hour display
+- Menu: set alarm hour, set alarm minute, toggle 12/24h, toggle alarm on/off, exit
+- Piezo buzzer beeps in pulses when the alarm rings
+- Debounced button presses so each press registers once
 
 ## Hardware
 - 1x Lolin C3 Mini ESP32 dev board
@@ -28,22 +32,22 @@ When you connect the clock to a 3.3V power source, the clock connects to Wi-Fi a
 - Adafruit ST7789
 
 ## Case
-A 3d printed case built to house the hardware (the PCB breadboard, ESP32, TFT Display, buzzer and jumper wires).
+A 3D printed case built to house the hardware (the PCB breadboard, ESP32, TFT Display, buzzer and jumper wires).
 
 ## Wiring
 
 ### TFT display
 
-Display pin | ESP32-C3 pin
-
-- VCC - 3.3V 
-- GND - GND
-- SCL - GPIO 6
-- SDA - GPIO 7
-- RES - GPIO 10
-- DC - GPIO 8
-- CS - GPIO 20
-- BL - 3.3V
+| Display pin | ESP32-C3 pin |
+|---|---|
+| VCC | 3.3V |
+| GND | GND |
+| SCL | GPIO 6 |
+| SDA | GPIO 7 |
+| RES | GPIO 10 |
+| DC | GPIO 8 |
+| CS | GPIO 20 |
+| BL | 3.3V |
 
 ### Buzzer
 - Positive lead - GPIO 21
@@ -51,14 +55,14 @@ Display pin | ESP32-C3 pin
 
 ### Buttons
 
-Button | GPIO
-
-- UP - 0
-- DOWN - 1
-- LEFT - 3
-- RIGHT - 4
-- OK - 5
-- SNOOZE - 18
+| Button | GPIO |
+|---|---|
+| UP | 0 |
+| DOWN | 1 |
+| LEFT | 3 |
+| RIGHT | 4 |
+| OK | 5 |
+| SNOOZE | 18 |
 
 ## Controls
 
@@ -85,8 +89,5 @@ Button | GPIO
 | TFT display | 1 | 2.25" ST7789 |
 | Piezo buzzer | 1 | 3.3V |
 | Push buttons | 6 | Momentary switches |
-| Jumper wires | 1 set | Male/male, male/female, female/female |
+| Jumper wires | - | Male/male, male/female, female/female |
 | Case | 1 | 3D printed or custom enclosure |
-
-## Journaling
-- `JOURNALING.md`
