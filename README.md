@@ -1,6 +1,6 @@
 # Bedside Alarm Clock
 
-A small bedside alarm clock built using a LOLA ESP32-C3!
+A small bedside alarm clock built using a Lolin ESP32-C3!
 
 ## Features
 - Syncs the clock over Wi-Fi using NTP on boot
