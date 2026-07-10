@@ -41,7 +41,7 @@ A 3D printed case built to house the hardware (the PCB breadboard, ESP32, TFT Di
 ### TFT display
 
 | Display pin | ESP32-C3 pin |
-|---|---|
+|------|------|
 | VCC | 3.3V |
 | GND | GND |
 | SCL | GPIO 6 |
@@ -58,7 +58,7 @@ A 3D printed case built to house the hardware (the PCB breadboard, ESP32, TFT Di
 ### Buttons
 
 | Button | GPIO |
-|---|---|
+|-----|-----|
 | UP | 0 |
 | DOWN | 1 |
 | LEFT | 3 |
@@ -93,3 +93,6 @@ A 3D printed case built to house the hardware (the PCB breadboard, ESP32, TFT Di
 | Push buttons | 6 | Momentary switches |
 | Jumper wires | - | Male/male, male/female, female/female |
 | Case | 1 | 3D printed or custom enclosure |
+
+*Built by Hiba*
+**Built for Blare, A Hackclub YSWS**
