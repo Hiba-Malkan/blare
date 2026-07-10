@@ -14,6 +14,7 @@ A small bedside alarm clock built using a LOLA ESP32-C3!
 - Piezo buzzer beeps in pulses when the alarm rings
 - Debounced button presses so each press registers once
 
+---
 ## Hardware
 - 1x Lolin C3 Mini ESP32 dev board
 - 1x 2.25" TFT display (ST7789)
@@ -27,12 +28,15 @@ A small bedside alarm clock built using a LOLA ESP32-C3!
 - Adafruit GFX
 - Adafruit ST7789
 
+---
 ## Case
 A 3D printed case built to house the hardware (the PCB breadboard, ESP32, TFT Display, buzzer and jumper wires).
 
 ![alt text](images/image2.png)
 
 ![alt text](images/image1.png)
+
+---
 
 ## Wiring
 
@@ -75,12 +79,16 @@ A 3D printed case built to house the hardware (the PCB breadboard, ESP32, TFT Di
 - **SNOOZE** — snooze the alarm while it's ringing
 - **UP** — stop the alarm while it's ringing
 
+---
+
 ## Project structure
 
 - `firmware/` — source code for the ESP32
 - `cad/` — case and assembly files
 - `wiring/` — wiring diagram / schematic
 - `images/` — photos and screenshots
+
+---
 
 ## Bill of materials
 
